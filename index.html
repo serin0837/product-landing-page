@@ -5,8 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Landing Page</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-   
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <div id="page-wrapper">
@@ -14,7 +20,6 @@
         <div class="logo">
           <img id="header-img" src="./img/logo1.png" alt="logo" />
         </div>
-        <!--change img logo-->
 
         <nav id="nav-bar">
           <ul>
@@ -25,34 +30,33 @@
             </li>
             <li>
               <a class="nav-link" href="#products">
-                Our Product
+                Products
               </a>
             </li>
             <li>
               <a class="nav-link" href="#posts">
-                Our Post
+                Posts
               </a>
             </li>
           </ul>
         </nav>
       </header>
 
-      <div class="container">
+      <main>
         <section id="hero">
-          <h2>Vegan, Eco-friendly Soup</h2>
+          <h1>Vegan, Eco-friendly Soup</h1>
+          <form id="form" action="#">
+            <p>Get a discount news, We not going to bother you!</p>
+            <input
+              name="email"
+              id="email"
+              type="email"
+              placeholder="Enter your email here:)"
+            />
+            <input id="submit" type="submit" value="start" class="btn" />
+          </form>
         </section>
-
-        <section>
-          <iframe
-            id="video"
-            height="315"
-            src="https://youtu.be/wWgrEd6Xusw"
-            frameborder="0"
-            allowfullscreen
-          ></iframe>
-          <!--need to add vedio-->
-        </section>
-      </div>
+      </main>
 
       <div class="container">
         <section id="features">
@@ -60,7 +64,7 @@
             <div class="icon"><i class="fa fa-heart"></i></div>
             <div class="desc">
               <h3>Hand made</h3>
-              <p>Our product is 100 %hand made by myself</p>
+              <p>Our product is 100 % hand made by myself</p>
             </div>
           </div>
           <div class="grid">
@@ -81,11 +85,15 @@
 
         <section id="products">
           <div class="product" id="soap1">
-            <div class="level">soap1</div>
+            <div class="level">
+              <img src="./img/soap4.jpg" alt="soap image" id="soap1-image" />
+            </div>
           </div>
 
           <div class="product" id="soap2">
-            <div class="level">soap2</div>
+            <div class="level">
+              <img src="./img/soap5.jpg" alt="soap image" id="soap1-image" />
+            </div>
           </div>
 
           <div class="product" id="soap3">
@@ -94,31 +102,17 @@
         </section>
 
         <section id="posts">
-            <div class="post" id="post1">
-                <div >post1</div>
-              </div>
-    
-              <div class="post" id="post2">
-                <div >post2</div>
-              </div>
-    
-              <div class="post" id="post3">
-                <div >post3</div>
-              </div>
-            </section>
-             </section>
+          <div class="post" id="post1">
+            <div>post1</div>
+          </div>
 
-        <section id="hero">
-          <form id="form" action="#">
-            <p>Get a discount news, We not going to bother you!</p>
-            <input
-              name="email"
-              id="email"
-              type="email"
-              placeholder="Enter your email here:)"
-            />
-            <input id="submit" type="submit" value="start" class="btn" />
-          </form>
+          <div class="post" id="post2">
+            <div>post2</div>
+          </div>
+
+          <div class="post" id="post3">
+            <div>post3</div>
+          </div>
         </section>
 
         <footer>
